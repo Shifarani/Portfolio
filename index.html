@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shifa Rani | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <nav>
+    <h1>Portfolio</h1>
+    <ul>
+      <li><a href="#about1">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <h2 id="mainHeading"></h2>
+    <p id="subHeading"></p>
+  </header>
+   
+  <section>
+    <div class="intro">
+      <img src="sifa.jpg" class="profile-pic" alt="Shifa Rani's Profile Picture" style="border-radius: 50% ;  " >
+      <div>
+        <h2 style="padding-left: 40px;">Introduction</h2>
+        <p style="padding-left: 40px;">
+          Name: Shifa<br>
+          Date of Birth: 16 August 2007<br>
+          Profession: Developer<br>  
+          Passion: Designing & Creative Work.<br>
+          Personality: Energetic, Focused & Passionate.<br>
+          Goal: To build powerful websites with beautiful design.<br>
+          Why Connect with Me? Because I’m a young, skilled developer with a fresh mind and creative approach.<br>
+          Vision: To grow in the digital world and create work that inspires others.<br>
+        </p>
+      </div>
+    </div>
+  </section>
+  <div id="about1">
+  <section id="about" style="margin-left: 150px;">
+    <h2>About Me</h2>
+    <p> 
+      Hello! I’m Shifa Rani – a passionate, creative, and dedicated individual who loves designing beautiful and meaningful experiences. I have a strong interest in UI/UX, branding, and digital design. I believe design is not just about looking good, but about feeling right and communicating clearly.
+
+      With a sharp eye for detail and a heart full of creativity, I always aim to make my work stand out. I enjoy learning, growing, and taking on new challenges that help me improve and inspire others. I'm professional, hardworking, and always excited to collaborate and create something amazing. Let’s turn ideas into reality together! 
+    </p>
+  </section>
+  </div>
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="project-grid">
+      <div class="card">
+        <h3>Explore India States</h3>
+        <img src="project01.jpg" alt="Explore India States" style="width: 200px; height: 100px;">
+      </div>
+      <div class="card">
+        <h3>Glow Circle</h3>
+        <img src="project02.jpg" alt="Glow Circle" style="width: 200px; height: 100px;">
+      </div>
+      <div class="card">
+        <h3>EduMap India</h3>
+        <img src="project03.jpg" alt="EduMap India" style="width: 200px; height: 100px;">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>
+      Got an idea? Let’s build it together! If you have an idea, a vision, or even just a thought you'd like to explore—I’d love to hear from you! Whether it's design-related, a creative collaboration, or something totally new, feel free to reach out. I’m here to listen, discuss, and help you bring your imagination to life. Let's turn your ideas into reality, together!
+    </p>
+    <mark>Email: <a href="mailto:shifarani.bcse2024@huroorkee.ac.in">shifarani.bcse2024@huroorkee.ac.in</a></mark>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Shifa Rani</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    const mainText = "Hey, I'm Shifa Rani";
+    const subText = "Frontend Developer | Creating Colorful Web Magic";
+
+    let i = 0;
+    let j = 0;
+
+    function typeMain() {
+      if (i < mainText.length) {
+        document.getElementById("mainHeading").innerHTML += mainText.charAt(i);
+        i++;
+        setTimeout(typeMain, 100); 
+      } else {
+        typeSub(); 
+      }
+    }
+
+    function typeSub() {
+      if (j < subText.length) {
+        document.getElementById("subHeading").innerHTML += subText.charAt(j);
+        j++;
+        setTimeout(typeSub, 50); 
+      }
+    }
+
+    window.onload = typeMain;
+  </script>
+
+</body>
+</html>

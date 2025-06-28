@@ -1,0 +1,41 @@
+/* style.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #ffe0ec;
+  color: #333;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+section {
+  padding: 2rem 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #e91e63;
+}
+
+.project-card {
+  background-color: #fff0f7;
+  padding: 1rem;
+  border-left: 5px solid #e91e63;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.contact {
+  text-align: center;
+  background-color: #fce4ec;
+  padding: 2rem 1rem;
+  margin-top: 2rem;
+}
